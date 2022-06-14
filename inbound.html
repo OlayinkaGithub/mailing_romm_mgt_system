@@ -11,15 +11,19 @@
     <header class="open_nav">
         <div class="navbar"><!--Header wrapper-->
             <div class="logo"> <!--logo-->
-                <a href="#" ><img src="assets/img/Slogo2.png" alt="Sterlinglog" class="sterling_logo"></a>
+                <h1>MRMS</h1>
             </div><!--logo End-->
-            <div class="category">
-                <a href="#">Inbound</a>
-                <a href="#">Outbound</a>
-                <a href="#">Record</a>
-                <a href="#">Contact Us</a>
-                <button class="log_out">Log Out</button>
-            </div>
+            <div class="category_logout"><!--Category Logout-->
+                <div class="category">
+                     <a href="C:\Users\omotehinseo\Desktop\Frontend Developer Training\mailing_romm_mgt_system\inbound.html">Inbound</a>
+                     <a href="#">Outbound</a>
+                     <a href="#">Record</a>
+                     <a href="#">Contact Us</a>
+                </div>
+                <div>
+                    <button class="log_out">Log Out</button>
+                </div>
+             </div><!--Category Logout Ends-->
         </div><!--Header Wrapper End--> 
              
     </header>   
@@ -42,12 +46,12 @@
                 <button>Find</button>
             </div>
             <div class="inbound_sender">
-                <h3>Recipient Details</h3>
+                <h3>Sender Details</h3>
                 <label for="fname">Full Name</label>
                 <input type="text" placeholder="Fullname" name="fname" required>
                 <label for="address">Address</label>
                 <input type="text" placeholder="Address" name="address" >
-                <label for="country">country</label>
+                <label for="country">Country</label>
                 <select id="country" name="country">
                     <option value="australia">Australia</option>
                     <option value="canada">Canada</option>
@@ -64,14 +68,15 @@
             <div class="package_details">
                 <h3>Package Details</h3>
                 <label for="typeofpackage">Type of Package</label>
-                <input type="text" name="typeofpackage">
+                <input type="text" placeholder="e.g Document, Gift etc." name="typeofpackage">
 
             </div>
-            <button class="inbound_save">Save</button>
+        
         </div>
-        <div class="Mial_Comment">
-            <label for="mailComment">Comments</label>
-            <input type="text" placeholder="Leave a message here" name="mailcomment">
+        <div class="mail_comment">
+            <label for="mailcomment">Comments</label>
+            <textarea name="commentarea" id="comment" cols="40" rows="10" placeholder="Leave a message here." required></textarea>
+            <button class="inbound_save">Save</button>
         </div><!--Inbound Form-->
         
     </div><!--Inbound Ends-->
