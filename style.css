@@ -95,3 +95,29 @@ header{
     padding: 20px;
 
 }
+
+.inbound_page {
+    background-image: linear-gradient(#fff, #EA7B7E, #DB1D1F);
+    display: flex;
+    justify-content: space-between;
+}
+
+.inbound_form{
+    padding: 50px;
+    max-width: 900px;
+
+}
+.inbound_form input{
+    width: 20%;
+    margin-right: 15px;
+    
+}
+
+.inbound_recipient,
+.inbound_sender{
+    border-color: #fff;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+
+}
+
