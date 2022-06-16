@@ -2,9 +2,15 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #fff;
+    align-items: center;
+    
+}
+
 header{
     background-color: #fff;
-    box-shadow: 2px 2px 20px rgba(0 22 0 / 0.1);
+    box-shadow: 2px 2px 20px rgba(0 22 0 / 0.3 );
     min-width: 100%;
     max-width: 100%;
     margin-bottom: 10px;
@@ -22,6 +28,7 @@ header{
 
 .logo h1{
     color:#DB1D1F;
+    margin-left: 20px;
 }
 
 .navbar .category a{
@@ -55,23 +62,98 @@ header{
     transition: .2s ease-in;
 }
 
-.inbound{
-    width: 70%;
-
-}
-li{
-    list-style: none;
-}
-
-.inboundform{
+.container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    max-width: 700px;
     width: 100%;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .title{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
 }
 
-.inboundform{
-    text-align: left;
-    padding: 50px;
-    width: 100%;
-   
+.container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background:#EA7B7E
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
     
+
 }
+form .user-details .input-box{
+margin: 20px 0 12px o;
+width: calc(100% /2-20px);
+margin-bottom: 20px;
+}
+
+.user-details .input-box .details{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.user-details .input-box input{
+    height: 35px;
+    width: 100%;
+}
+.user-details .input-box input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    /* font-size: 16px; */
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.inbound_save{
+    width: 20%;
+    background-image: linear-gradient(#fff, #EA7B7E, #DB1D1F);;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 10px;
+    box-shadow: 2px 2px 20px rgba(0 0 0 / 0.3);
+}
+.inbound_save:hover{
+    color: #fff;
+    transition: .2s ease-in;
+}
+.employee_search{
+    width: 20%;
+    background-image: linear-gradient(#fff, #EA7B7E, #DB1D1F);;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 10px;
+    box-shadow: 2px 2px 20px rgba(0 0 0 / 0.3);
+}
+.employee_search:hover{
+    color: #fff;
+    transition: .2s ease-in;
+}
+
+.

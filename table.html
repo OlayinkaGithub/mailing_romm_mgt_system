@@ -29,12 +29,12 @@
 
         <div class="container">
             <div class="inboundform"><!--Inbound Form-->
-                <div class="inboundrecipient">
-                    <h3>Recipient Details</h3>
+                    <!-- <h3>Recipient Details</h3> -->
+                    <div class="title">Recipient</div>
                     <form action="#">
                         <div class="user-details">
                           <div class="input-box">
-                            <span class="details">FirstName</span>
+                            <span class="details">First Name</span>
                             <input type="text" placeholder="FirstName" id="fname" required>
                           </div>
                           <div class="input-box">
@@ -57,13 +57,66 @@
                             <span class="details">Email</span>
                             <input type="email" placeholder="Email" required>
                           </div>
-                          <div class="reciever_btn">
-                            <button>Find</button>
-                          </div>
                         </div>
-                        
+                        <div class="reciever_btn">
+                            <button class="employee_search" >Find</button>
+                          </div>
+
+                          <div class="title">Sender</div>
+
+                          <div class="user-details">
+                            <div class="input-box">
+                              <span class="details">First Name</span>
+                              <input type="text" placeholder="FirstName" id="fname" required>
+                            </div>
+                            <div class="input-box">
+                              <span class="details">Surname</span>
+                              <input type="text" placeholder="Surname" id="sname" required>
+                            </div>
+                            <div class="input-box">
+                              <span class="details">Mobile Number</span>
+                              <input type="text" placeholder="Mobile Number" id="mnumber" required>
+                            </div>
+                            <div class="input-box">
+                              <span class="details">Email</span>
+                              <input type="email" placeholder="Email">
+                            </div>
+                            <div class="input-box">
+                              <span class="details">Country</span>
+                              <input type="text" placeholder="Country" id="mname">
+                            </div>
+                            <div class="input-box">
+                              <span class="details">State</span>
+                              <input type="text" placeholder="State" id="employee_id" required>
+                            </div>
+                          </div>
+
+                          <div class="title">Package Details</div>
+
+                          <div class="user-details">
+                            <div class="input-box">
+                              <span class="details">Type of package</span>
+                              <input type="text" placeholder="e.g Document, gift etc" id="fname" required>
+                            </div>
+                            <div class="input-box">
+                              <span class="details">Quantity</span>
+                              <input type="text" placeholder="count" id="sname" required>
+                            </div>
+                            <div class="input-box">
+                              <span class="details">weight</span>
+                              <input type="text" placeholder="in Kg" id="sname" required>
+                            </div>
+                            <div class="input-box">
+                                
+                                <span class="details">Message the sender</span>
+                                <textarea name="commentarea" id="comment" cols="40" rows="10" placeholder="Leave a message here." required></textarea>
+                                <button class="inbound_save">Save</button>
+                            </div>
+
+                
+
                     </form>
-               <div class="inbound_sender">
+               <!-- <div class="inbound_sender">
                         <h3>Sender Details</h3>
                         
                         <label for="fn">Full Name</label>
@@ -88,9 +141,9 @@
                         
                         <label for="emailadd">Email</label>
                         <input type="email" placeholder="Email" id="emailadd">
-                    </div>
+                    </div> -->
                   
-                </form>
+                <!-- </form>
                 </div>
                 <div class="package_details">
                     <h3>Package Details</h3>
@@ -100,7 +153,7 @@
                     <form action="/action_page.php">
                         <input type="file" id="filename">
                     </form>
-                </div>
+                </div> -->
             </div> 
                     
         </div>
