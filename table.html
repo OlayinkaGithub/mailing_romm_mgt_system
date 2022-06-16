@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRMS</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <header class="open_nav">
+        <div class="navbar"><!--Header wrapper-->
+            <div class="logo"> <!--logo-->
+                <h1>MRMS</h1>
+            </div><!--logo End-->
+            <div class="category_logout"><!--Category Logout-->
+                <div class="category">
+                     <a href="inbound.html" target="_blank">Inbound</a>
+                     <a href="#">Outbound</a>
+                     <a href="#">Record</a>
+                     <a href="#">Contact Us</a>
+                </div>                
+                <div>
+                    <button class="log_out">Log Out</button>
+                </div>
+            </div><!--Category Logout Ends-->
+        </div><!--Header Wrapper End--> 
+    </header>
+
+        <div class="container">
+            <div class="inboundform"><!--Inbound Form-->
+                <div class="inboundrecipient">
+                    <h3>Recipient Details</h3>
+                    <form action="#">
+                        <div class="user-details">
+                          <div class="input-box">
+                            <span class="details">FirstName</span>
+                            <input type="text" placeholder="FirstName" id="fname" required>
+                          </div>
+                          <div class="input-box">
+                            <span class="details">Surname</span>
+                            <input type="text" placeholder="Surname" id="sname" required>
+                          </div>
+                          <div class="input-box">
+                            <span class="details">Middle Name</span>
+                            <input type="text" placeholder="Middle Name" id="mname" required>
+                          </div>
+                          <div class="input-box">
+                            <span class="details">Employee ID</span>
+                            <input type="text" placeholder="Employee ID" id="employee_id" required>
+                          </div>
+                          <div class="input-box">
+                            <span class="details">Mobile Number</span>
+                            <input type="text" placeholder="Mobile Number" id="mnumber" required>
+                          </div>
+                          <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="email" placeholder="Email" required>
+                          </div>
+                          <div class="reciever_btn">
+                            <button>Find</button>
+                          </div>
+                        </div>
+                        
+                    </form>
+               <div class="inbound_sender">
+                        <h3>Sender Details</h3>
+                        
+                        <label for="fn">Full Name</label>
+                        <input type="text" placeholder="Fullname" id="fn" required>
+                        
+                        <label for="address_id">Address</label>
+                        <input type="text" placeholder="Address" id="address_id" >
+                        
+                        <label for="country">Country</label>
+                        <select id="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="usa">USA</option>
+                          </select>
+                          
+                        <label for="state">State</label>
+                        <input type="text" id="state">
+                        
+                        <label for="mobilenumber">Mobile Number</label>
+                        <input type="text" placeholder="mobile number" id="mobilenumber" required>
+                        
+                        <label for="emailadd">Email</label>
+                        <input type="email" placeholder="Email" id="emailadd">
+                    </div>
+                  
+                </form>
+                </div>
+                <div class="package_details">
+                    <h3>Package Details</h3>
+                    <label for="typeofpackage">Type of Package</label>
+                    <input type="text" placeholder="e.g Document, Gift etc." id="typeofpackage">
+                    
+                    <form action="/action_page.php">
+                        <input type="file" id="filename">
+                    </form>
+                </div>
+            </div> 
+                    
+        </div>
+
+
+</body>
+</html>
