@@ -6,9 +6,7 @@
 /*============================
 Welcome Page
 =============================*/
-*{
-    box-sizing: border-box;
-}
+
 
 .login_page{
     padding: 0%;
@@ -69,11 +67,14 @@ input[type=text], input[type=password] {
 
 }
 
+/*============================
+Form Page
+=============================*/
 
 body{
     background-color: #fff;
     align-items: center;
-    background-image: url(assets/img/delivery.jpg);
+    /* background-image: url(assets/img/delivery.jpg); */
     
 }
 
@@ -143,6 +144,9 @@ header{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-image: url(assets/img/delivery.jpg);
+    color: #fff;
+
 }
 .container .title{
     font-size: 20px;
@@ -227,4 +231,45 @@ margin-bottom: 20px;
     transition: .2s ease-in;
 }
 
+.details a{
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.click_details p{
+    font-size: 12px;
+    margin-top: 10%;
+    font-style: italic;
+    color: #fff;
+}
+
+.inbound_save a{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+.inbound_save a:hover{
+    color: #fff;
+    transition: 1s ease-in;
+}
+
+
+/*============================
+Confirmation Page
+=============================*/
+
+.confirmation{
+    background-color: #fff;
+    padding: 45px 40px;
+    border-radius: 10px;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 20px rgba(0 22 0 / 0.3);
+    background-image: url(assets/img/delivery.jpg);
+    color: #fff;
+
+}
 
